@@ -20,8 +20,10 @@ Zepto(function($) {
         $("#fav, #qr").bind("error", function(e) {
             $(e.target).hide();
         });
-
-        QRCodeBox.makeCode(tab.url);
+        
+        setTimeout(function() {
+            QRCodeBox.makeCode(tab.url);
+        }, 0);
         //$("#qr").attr("src", url);
     });
 });

@@ -9,10 +9,14 @@
 
 body {
     background: #fff;
+    width: 210px;
+    height: 210px;
 }
 
 body #content {
     position: relative;
+    width: 210px;
+    height: 210px;
 }
 
 body #content #qr {
