@@ -13,9 +13,9 @@ Zepto(function($) {
 
     chrome.tabs.getSelected(null, function(tab) {
         //var url = "http://c.wotula.com/chart.php?size=32&level=H&val=" + encodeURIComponent(tab.url);
-        if (tab.favIconUrl) {
-            $("#fav").attr("src", tab.favIconUrl).show();
-        } 
+        // if (tab.favIconUrl) {
+        //     $("#fav").attr("src", tab.favIconUrl).show();
+        // } 
 
         $("#fav, #qr").bind("error", function(e) {
             $(e.target).hide();
